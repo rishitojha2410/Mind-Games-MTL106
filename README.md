@@ -44,7 +44,7 @@ The following matrix describes the probabilities for each possible combination o
   - Validate your solution with Monte Carlo simulations.
 
 ### Instructions
-- Run Monte Carlo simulations for **105 iterations**.
+- Run Monte Carlo simulations for **10^5 iterations**.
 - Clearly show all your calculations and **comment your code** for readability.
 - Ensure your code runs within **20 seconds** for all test cases.
 - **Plagiarism** will be penalized heavily, and all code will be checked for plagiarism.
