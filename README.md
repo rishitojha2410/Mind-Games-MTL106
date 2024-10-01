@@ -1,8 +1,6 @@
 # MTL106 - Probability and Stochastic Processes  
 ## Assignment 1: Mind Games
 
-**Deadline**: 10th September 2024
-
 ### Overview
 Alice and Bob are playing a series of chess matches, where they can choose different strategies each round (aggressive, balanced, or defensive). The assignment explores the optimal strategies for Alice based on different scenarios involving probabilistic outcomes. You are required to solve both theoretical and coding problems, using Monte Carlo simulations to validate your solutions.
 ### Payoff Matrix:
