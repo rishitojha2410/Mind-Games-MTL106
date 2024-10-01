@@ -5,6 +5,15 @@
 
 ### Overview
 Alice and Bob are playing a series of chess matches, where they can choose different strategies each round (aggressive, balanced, or defensive). The assignment explores the optimal strategies for Alice based on different scenarios involving probabilistic outcomes. You are required to solve both theoretical and coding problems, using Monte Carlo simulations to validate your solutions.
+### Payoff Matrix:
+
+The following matrix describes the probabilities for each possible combination of strategies Alice and Bob might choose in a round:
+
+|                 | Attack (Bob)         | Balanced (Bob)        | Defence (Bob)         |
+|-----------------|----------------------|-----------------------|-----------------------|
+| **Attack (Alice)**   | (nB / (nA + nB), 0, nA / (nA + nB)) | (7/10, 0, 3/10)       | (5/11, 0, 6/11)       |
+| **Balanced (Alice)** | (3/10, 0, 7/10)   | (1/3, 1/3, 1/3)       | (3/10, 1/2, 1/5)      |
+| **Defence (Alice)**  | (6/11, 0, 5/11)   | (1/2, 1/2, 3/10)      | (1/10, 4/5, 1/10)     |
 
 ### Problem Breakdown
 
@@ -41,14 +50,6 @@ Alice and Bob are playing a series of chess matches, where they can choose diffe
 - Clearly show all your calculations and **comment your code** for readability.
 - Ensure your code runs within **20 seconds** for all test cases.
 - **Plagiarism** will be penalized heavily, and all code will be checked for plagiarism.
-
-### Submission Format
-1. Implement your solutions in the respective Python files for questions 1, 2a, 2b, 2c, 3a, and 3b.
-2. For theoretical derivations, submit your solutions in **LaTeX** or upload neatly written derivations.
-3. Organize your code in a folder named **EntryNumber_mtl106_a1** with files named according to the question number.
-4. Ensure you implement the provided starter code functions:
-   - `play_move` and `observe_result` for the Alice and Bob player classes.
-   - Functions for `simulate_round` and `monte_carlo` to run the simulations.
 
 ### Notes
 - Replace any zeros in your entry number with 9 while solving the assignment.
