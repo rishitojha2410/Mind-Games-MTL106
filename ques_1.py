@@ -61,6 +61,14 @@ def calc_expectation(t):
         return p.q^(-1) mod 1000000007.
 
     """
+    """
+    sum of Xi gives the difference in number of points won by alice and bob 
+    (since draw isn't possible when both of them attack):
+    so if in T rounds, alice wins i rounds, then bob wins T-i rounds, 
+    The difference in points is equal to 2i-T
+    probability of this happening = calc_prob(i,T-i)
+    hence expectation = \sum_{i=1}^T (2i-T)*calc_prob(i,T-i)
+    """
     ans = 0
     for i in range(t+1):
         ans = mod_add(ans,mod_multiply((2*i-t),calc_prob(i,t-i)))
@@ -76,6 +84,7 @@ def calc_variance(t):
         return p.q^(-1) mod 1000000007.
 
     """
+    #from a similar logic: variance = \sum_{i=1}^T (2i-T)^2*calc_prob(i,T-i)
     ans1 = 0
     for i in range(t+1):
         ans1 = mod_add(ans1,mod_multiply(((2*i-t)**2),calc_prob(i,t-i)))
