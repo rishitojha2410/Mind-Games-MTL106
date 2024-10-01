@@ -14,6 +14,8 @@ The following matrix describes the probabilities for each possible combination o
 | **Defence (Alice)**  | (6/11, 0, 5/11)   | (1/2, 1/2, 3/10)      | (1/10, 4/5, 1/10)     |
 
 ### Problem Breakdown
+Alice wins the first round and loses the second. Determined to outperform Bob, Alice decides to analyze what her optimal strategy should be in response to various strategies that Bob might use.
+
 
 #### 1. Alice and Bob Always Attack
 - **Q1(a)**: Calculate the probability that after `T` rounds, Alice wins `T1T2` matches and Bob wins `T3T4` matches.
