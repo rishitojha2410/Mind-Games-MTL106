@@ -18,11 +18,11 @@ The following matrix describes the probabilities for each possible combination o
 ### Problem Breakdown
 
 #### 1. Alice and Bob Always Attack
-- **1(a)**: Calculate the probability that after `T` rounds, Alice wins `T1T2` matches and Bob wins `T3T4` matches.
+- **Q1(a)**: Calculate the probability that after `T` rounds, Alice wins `T1T2` matches and Bob wins `T3T4` matches.
   - Let `T1T2` and `T3T4` represent the last four digits of your entry number. Replace any zeros in your entry number with 9.
   - Example: If the entry number is `2020AB12345`, then `T1T2 = 23` and `T3T4 = 45`, with `T = 68`.
 
-- **1(b)**: Define a random variable `Xi`:
+- **Q1(b)**: Define a random variable `Xi`:
   - `Xi = 1` if Alice wins round `i`, 
   - `Xi = 0` if it’s a draw, 
   - `Xi = -1` if Alice loses.
@@ -30,19 +30,19 @@ The following matrix describes the probabilities for each possible combination o
   Calculate the expected value and variance of the sum of `Xi` over `T` rounds, where `T` is the last two digits of your entry number.
 
 #### 2. Bob's Strategy Depends on His Previous Round
-- **2(a)**: If Bob's current strategy is based on his performance in the previous round (defensive if he won, balanced if it was a draw, and aggressive if he lost), determine Alice's optimal strategy to maximize points in the current round.
+- **Q2(a)**: If Bob's current strategy is based on his performance in the previous round (defensive if he won, balanced if it was a draw, and aggressive if he lost), determine Alice's optimal strategy to maximize points in the current round.
   - Validate your findings with Monte Carlo simulations.
 
-- **2(b)**: Is Alice's greedy strategy (optimal per round) the best approach for maximizing total points over all rounds? If not, identify a situation where a non-greedy strategy outperforms the greedy strategy.
+- **Q2(b)**: Is Alice's greedy strategy (optimal per round) the best approach for maximizing total points over all rounds? If not, identify a situation where a non-greedy strategy outperforms the greedy strategy.
   - Use Monte Carlo simulations to support your answer.
 
-- **2(c)**: Estimate the expected number of rounds `τ` for Alice to win `T` matches, using Monte Carlo simulations.
+- **Q2(c)**: Estimate the expected number of rounds `τ` for Alice to win `T` matches, using Monte Carlo simulations.
   - `T` is the last two digits of your entry number.
 
 #### 3. Bob Chooses Play Style Randomly
-- **3(a)**: Determine Alice's optimal strategy when Bob's play style is chosen uniformly at random for each round.
+- **Q3(a)**: Determine Alice's optimal strategy when Bob's play style is chosen uniformly at random for each round.
   
-- **3(b)**: Calculate Alice's optimal strategy and expected number of points after `T` rounds, where `T` is the last two digits of your entry number.
+- **Q3(b)**: Calculate Alice's optimal strategy and expected number of points after `T` rounds, where `T` is the last two digits of your entry number.
   - Validate your solution with Monte Carlo simulations.
 
 ### Instructions
